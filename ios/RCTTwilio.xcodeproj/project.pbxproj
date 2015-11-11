@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D457BAB2B40BE28F6C2902C7 /* libPods-RCTTwilio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */; };
+		DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862161BF2D3AF00A97135 /* RCTTwilio.h */; };
+		DB0862191BF2D3AF00A97135 /* RCTTwilio.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0862181BF2D3AF00A97135 /* RCTTwilio.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB0862111BF2D3AF00A97135 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTTwilio.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio.release.xcconfig"; sourceTree = "<group>"; };
+		724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTTwilio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTTwilio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio.debug.xcconfig"; sourceTree = "<group>"; };
+		DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTTwilio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0862161BF2D3AF00A97135 /* RCTTwilio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTTwilio.h; sourceTree = "<group>"; };
+		DB0862181BF2D3AF00A97135 /* RCTTwilio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTwilio.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB0862101BF2D3AF00A97135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D457BAB2B40BE28F6C2902C7 /* libPods-RCTTwilio.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EDE7A2E7F3B6BACEA7E3418 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */,
+				11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB08620A1BF2D3AF00A97135 = {
+			isa = PBXGroup;
+			children = (
+				DB0862151BF2D3AF00A97135 /* RCTTwilio */,
+				DB0862141BF2D3AF00A97135 /* Products */,
+				8EDE7A2E7F3B6BACEA7E3418 /* Pods */,
+				F2B54DEB8CE84D1969AC616D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0862141BF2D3AF00A97135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0862151BF2D3AF00A97135 /* RCTTwilio */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862161BF2D3AF00A97135 /* RCTTwilio.h */,
+				DB0862181BF2D3AF00A97135 /* RCTTwilio.m */,
+			);
+			path = RCTTwilio;
+			sourceTree = "<group>";
+		};
+		F2B54DEB8CE84D1969AC616D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0862121BF2D3AF00A97135 /* RCTTwilio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */;
+			buildPhases = (
+				AEA3C98121C139231B5861A2 /* Check Pods Manifest.lock */,
+				DB08620F1BF2D3AF00A97135 /* Sources */,
+				DB0862101BF2D3AF00A97135 /* Frameworks */,
+				DB0862111BF2D3AF00A97135 /* CopyFiles */,
+				FB822397FBAC582E8079965D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTTwilio;
+			productName = RCTTwilio;
+			productReference = DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB08620B1BF2D3AF00A97135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rogchap Software";
+				TargetAttributes = {
+					DB0862121BF2D3AF00A97135 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DB08620E1BF2D3AF00A97135 /* Build configuration list for PBXProject "RCTTwilio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB08620A1BF2D3AF00A97135;
+			productRefGroup = DB0862141BF2D3AF00A97135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0862121BF2D3AF00A97135 /* RCTTwilio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEA3C98121C139231B5861A2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB822397FBAC582E8079965D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB08620F1BF2D3AF00A97135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0862191BF2D3AF00A97135 /* RCTTwilio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB08621A1BF2D3AF00A97135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB08621B1BF2D3AF00A97135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB08621D1BF2D3AF00A97135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TwilioSDK\"",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB08621E1BF2D3AF00A97135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TwilioSDK\"",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB08620E1BF2D3AF00A97135 /* Build configuration list for PBXProject "RCTTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB08621A1BF2D3AF00A97135 /* Debug */,
+				DB08621B1BF2D3AF00A97135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB08621D1BF2D3AF00A97135 /* Debug */,
+				DB08621E1BF2D3AF00A97135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB08620B1BF2D3AF00A97135 /* Project object */;
+}
