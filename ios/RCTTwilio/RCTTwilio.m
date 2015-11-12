@@ -38,24 +38,26 @@ RCT_EXPORT_METHOD(disconnect) {
     [_connection disconnect];
 }
 
-
 RCT_EXPORT_METHOD(accept) {
     [_pendingConnection accept];
     _connection = _pendingConnection;
     _pendingConnection = nil;
 }
 
+RCT_EXPORT_METHOD(reject) {
+    [_pendingConnection reject];
+}
+
+RCT_EXPORT_METHOD(ignore) {
+    [_pendingConnection ignore];
+}
 
 #pragma mark - TCDeviceDelegate
 
 -(void)device:(TCDevice *)device didReceiveIncomingConnection:(TCConnection *)connection {
-    if (device.state == TCDeviceStateBusy) {
-        [connection reject];
-    } else {
-        [self.bridge.eventDispatcher sendAppEventWithName:@"deviceDidReceiveIncoming" body:nil];
-        _pendingConnection = connection;
-        [_pendingConnection setDelegate:self];
-    }
+    _pendingConnection = connection;
+    [_pendingConnection setDelegate:self];
+    [self.bridge.eventDispatcher sendAppEventWithName:@"deviceDidReceiveIncoming" body:nil];
 }
 
 -(void)deviceDidStartListeningForIncomingConnections:(TCDevice*)device {
@@ -85,6 +87,13 @@ RCT_EXPORT_METHOD(accept) {
 }
 
 -(void)connectionDidDisconnect:(TCConnection *)connection {
+    if (connection == _connection) {
+        _connection = nil;
+    }
+    
+    if (connection == _pendingConnection) {
+        _pendingConnection = nil;
+    }
     [self.bridge.eventDispatcher
      sendAppEventWithName:@"connectionDidDisconnect" body:nil];
 }

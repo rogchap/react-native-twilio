@@ -26,6 +26,12 @@ let Twilio = {
   accept() {
     TwilioRCT.accept();
   },
+  reject() {
+    TwilioRCT.reject();
+  },
+  ignore() {
+    TwilioRCT.ignore();
+  },
   addEventListener(type, handler) {
     _eventHandlers[type].set(handler, NativeAppEventEmitter.addListener(
       type, err => {
