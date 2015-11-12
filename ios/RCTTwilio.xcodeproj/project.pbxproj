@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D457BAB2B40BE28F6C2902C7 /* libPods-RCTTwilio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */; };
 		DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862161BF2D3AF00A97135 /* RCTTwilio.h */; };
 		DB0862191BF2D3AF00A97135 /* RCTTwilio.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0862181BF2D3AF00A97135 /* RCTTwilio.m */; };
+		DB0862AD1BF4220600A97135 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862981BF4216D00A97135 /* libTwilioClient.a */; };
+		DB0862AE1BF4220A00A97135 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862971BF4216D00A97135 /* libssl.a */; };
+		DB0862AF1BF4220D00A97135 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862961BF4216D00A97135 /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,42 +28,56 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTTwilio.release.xcconfig"; path = "Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio.release.xcconfig"; sourceTree = "<group>"; };
-		724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RCTTwilio.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RCTTwilio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio.debug.xcconfig"; sourceTree = "<group>"; };
 		DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTTwilio.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0862161BF2D3AF00A97135 /* RCTTwilio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTTwilio.h; sourceTree = "<group>"; };
 		DB0862181BF2D3AF00A97135 /* RCTTwilio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTwilio.m; sourceTree = "<group>"; };
+		DB08628F1BF4216D00A97135 /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnection.h; sourceTree = "<group>"; };
+		DB0862901BF4216D00A97135 /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnectionDelegate.h; sourceTree = "<group>"; };
+		DB0862911BF4216D00A97135 /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevice.h; sourceTree = "<group>"; };
+		DB0862921BF4216D00A97135 /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDeviceDelegate.h; sourceTree = "<group>"; };
+		DB0862931BF4216D00A97135 /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPresenceEvent.h; sourceTree = "<group>"; };
+		DB0862941BF4216D00A97135 /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioClient.h; sourceTree = "<group>"; };
+		DB0862961BF4216D00A97135 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		DB0862971BF4216D00A97135 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		DB0862981BF4216D00A97135 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
+		DB0862991BF4216D00A97135 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
+		DB08629B1BF4216D00A97135 /* disconnect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = disconnect.wav; sourceTree = "<group>"; };
+		DB08629C1BF4216D00A97135 /* dtmf_0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_0.wav; sourceTree = "<group>"; };
+		DB08629D1BF4216D00A97135 /* dtmf_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_1.wav; sourceTree = "<group>"; };
+		DB08629E1BF4216D00A97135 /* dtmf_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_2.wav; sourceTree = "<group>"; };
+		DB08629F1BF4216D00A97135 /* dtmf_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_3.wav; sourceTree = "<group>"; };
+		DB0862A01BF4216D00A97135 /* dtmf_4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_4.wav; sourceTree = "<group>"; };
+		DB0862A11BF4216D00A97135 /* dtmf_5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_5.wav; sourceTree = "<group>"; };
+		DB0862A21BF4216D00A97135 /* dtmf_6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_6.wav; sourceTree = "<group>"; };
+		DB0862A31BF4216D00A97135 /* dtmf_7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_7.wav; sourceTree = "<group>"; };
+		DB0862A41BF4216D00A97135 /* dtmf_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_8.wav; sourceTree = "<group>"; };
+		DB0862A51BF4216D00A97135 /* dtmf_9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_9.wav; sourceTree = "<group>"; };
+		DB0862A61BF4216D00A97135 /* dtmf_hash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_hash.wav; sourceTree = "<group>"; };
+		DB0862A71BF4216D00A97135 /* dtmf_star.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_star.wav; sourceTree = "<group>"; };
+		DB0862A81BF4216D00A97135 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		DB0862A91BF4216D00A97135 /* outgoing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = outgoing.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DB0862101BF2D3AF00A97135 /* Frameworks */ = {
+		DB0862AC1BF421FF00A97135 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D457BAB2B40BE28F6C2902C7 /* libPods-RCTTwilio.a in Frameworks */,
+				DB0862AD1BF4220600A97135 /* libTwilioClient.a in Frameworks */,
+				DB0862AE1BF4220A00A97135 /* libssl.a in Frameworks */,
+				DB0862AF1BF4220D00A97135 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8EDE7A2E7F3B6BACEA7E3418 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */,
-				11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		DB08620A1BF2D3AF00A97135 = {
 			isa = PBXGroup;
 			children = (
+				DB08628D1BF4216D00A97135 /* TwilioSDK */,
 				DB0862151BF2D3AF00A97135 /* RCTTwilio */,
 				DB0862141BF2D3AF00A97135 /* Products */,
-				8EDE7A2E7F3B6BACEA7E3418 /* Pods */,
-				F2B54DEB8CE84D1969AC616D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,12 +98,61 @@
 			path = RCTTwilio;
 			sourceTree = "<group>";
 		};
-		F2B54DEB8CE84D1969AC616D /* Frameworks */ = {
+		DB08628D1BF4216D00A97135 /* TwilioSDK */ = {
 			isa = PBXGroup;
 			children = (
-				724E0D12DF7CA14958203865 /* libPods-RCTTwilio.a */,
+				DB08628E1BF4216D00A97135 /* Headers */,
+				DB0862951BF4216D00A97135 /* Libraries */,
+				DB0862991BF4216D00A97135 /* readme.html */,
+				DB08629A1BF4216D00A97135 /* Resources */,
 			);
-			name = Frameworks;
+			name = TwilioSDK;
+			path = libs/TwilioSDK;
+			sourceTree = "<group>";
+		};
+		DB08628E1BF4216D00A97135 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DB08628F1BF4216D00A97135 /* TCConnection.h */,
+				DB0862901BF4216D00A97135 /* TCConnectionDelegate.h */,
+				DB0862911BF4216D00A97135 /* TCDevice.h */,
+				DB0862921BF4216D00A97135 /* TCDeviceDelegate.h */,
+				DB0862931BF4216D00A97135 /* TCPresenceEvent.h */,
+				DB0862941BF4216D00A97135 /* TwilioClient.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		DB0862951BF4216D00A97135 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862961BF4216D00A97135 /* libcrypto.a */,
+				DB0862971BF4216D00A97135 /* libssl.a */,
+				DB0862981BF4216D00A97135 /* libTwilioClient.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DB08629A1BF4216D00A97135 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB08629B1BF4216D00A97135 /* disconnect.wav */,
+				DB08629C1BF4216D00A97135 /* dtmf_0.wav */,
+				DB08629D1BF4216D00A97135 /* dtmf_1.wav */,
+				DB08629E1BF4216D00A97135 /* dtmf_2.wav */,
+				DB08629F1BF4216D00A97135 /* dtmf_3.wav */,
+				DB0862A01BF4216D00A97135 /* dtmf_4.wav */,
+				DB0862A11BF4216D00A97135 /* dtmf_5.wav */,
+				DB0862A21BF4216D00A97135 /* dtmf_6.wav */,
+				DB0862A31BF4216D00A97135 /* dtmf_7.wav */,
+				DB0862A41BF4216D00A97135 /* dtmf_8.wav */,
+				DB0862A51BF4216D00A97135 /* dtmf_9.wav */,
+				DB0862A61BF4216D00A97135 /* dtmf_hash.wav */,
+				DB0862A71BF4216D00A97135 /* dtmf_star.wav */,
+				DB0862A81BF4216D00A97135 /* incoming.wav */,
+				DB0862A91BF4216D00A97135 /* outgoing.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,11 +162,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */;
 			buildPhases = (
-				AEA3C98121C139231B5861A2 /* Check Pods Manifest.lock */,
 				DB08620F1BF2D3AF00A97135 /* Sources */,
-				DB0862101BF2D3AF00A97135 /* Frameworks */,
 				DB0862111BF2D3AF00A97135 /* CopyFiles */,
-				FB822397FBAC582E8079965D /* Copy Pods Resources */,
+				DB0862AC1BF421FF00A97135 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,39 +205,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AEA3C98121C139231B5861A2 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FB822397FBAC582E8079965D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RCTTwilio/Pods-RCTTwilio-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB08620F1BF2D3AF00A97135 /* Sources */ = {
@@ -223,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -259,44 +289,49 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		DB08621D1BF2D3AF00A97135 /* Debug */ = {
+		DB0862AA1BF4216D00A97135 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D4ABD15C6D4D57E17C78C084 /* Pods-RCTTwilio.debug.xcconfig */;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/TwilioSDK\"",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/TwilioSDK/**",
+					"$(PROJECT_DIR)/libs/TwilioSDK/Libraries",
+				);
+				PRODUCT_NAME = RCTTwilio;
 			};
 			name = Debug;
 		};
-		DB08621E1BF2D3AF00A97135 /* Release */ = {
+		DB0862AB1BF4216D00A97135 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11838308DA6EA54B830E2462 /* Pods-RCTTwilio.release.xcconfig */;
 			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"\"${PODS_ROOT}/Headers/Public/TwilioSDK\"",
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React",
 				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/TwilioSDK/**",
+					"$(PROJECT_DIR)/libs/TwilioSDK/Libraries",
+				);
+				PRODUCT_NAME = RCTTwilio;
 			};
 			name = Release;
 		};
@@ -315,8 +350,8 @@
 		DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB08621D1BF2D3AF00A97135 /* Debug */,
-				DB08621E1BF2D3AF00A97135 /* Release */,
+				DB0862AA1BF4216D00A97135 /* Debug */,
+				DB0862AB1BF4216D00A97135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
