@@ -12,6 +12,21 @@
 		DB0862AD1BF4220600A97135 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862981BF4216D00A97135 /* libTwilioClient.a */; };
 		DB0862AE1BF4220A00A97135 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862971BF4216D00A97135 /* libssl.a */; };
 		DB0862AF1BF4220D00A97135 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862961BF4216D00A97135 /* libcrypto.a */; };
+		DB0862D71BF42D8A00A97135 /* disconnect.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629B1BF4216D00A97135 /* disconnect.wav */; };
+		DB0862D81BF42D8A00A97135 /* dtmf_0.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629C1BF4216D00A97135 /* dtmf_0.wav */; };
+		DB0862D91BF42D8A00A97135 /* dtmf_1.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629D1BF4216D00A97135 /* dtmf_1.wav */; };
+		DB0862DA1BF42D8B00A97135 /* dtmf_2.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629E1BF4216D00A97135 /* dtmf_2.wav */; };
+		DB0862DB1BF42D8B00A97135 /* dtmf_3.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629F1BF4216D00A97135 /* dtmf_3.wav */; };
+		DB0862DC1BF42D8B00A97135 /* dtmf_4.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A01BF4216D00A97135 /* dtmf_4.wav */; };
+		DB0862DD1BF42D8B00A97135 /* dtmf_5.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A11BF4216D00A97135 /* dtmf_5.wav */; };
+		DB0862DE1BF42D8B00A97135 /* dtmf_6.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A21BF4216D00A97135 /* dtmf_6.wav */; };
+		DB0862DF1BF42D8B00A97135 /* dtmf_7.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A31BF4216D00A97135 /* dtmf_7.wav */; };
+		DB0862E01BF42D8B00A97135 /* dtmf_8.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A41BF4216D00A97135 /* dtmf_8.wav */; };
+		DB0862E11BF42D8B00A97135 /* dtmf_9.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A51BF4216D00A97135 /* dtmf_9.wav */; };
+		DB0862E21BF42D8B00A97135 /* dtmf_hash.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A61BF4216D00A97135 /* dtmf_hash.wav */; };
+		DB0862E31BF42D8B00A97135 /* dtmf_star.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A71BF4216D00A97135 /* dtmf_star.wav */; };
+		DB0862E41BF42D8B00A97135 /* incoming.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A81BF4216D00A97135 /* incoming.wav */; };
+		DB0862E51BF42D8B00A97135 /* outgoing.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A91BF4216D00A97135 /* outgoing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,6 +37,30 @@
 			dstSubfolderSpec = 16;
 			files = (
 				DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0862D61BF42D7D00A97135 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				DB0862D71BF42D8A00A97135 /* disconnect.wav in CopyFiles */,
+				DB0862D81BF42D8A00A97135 /* dtmf_0.wav in CopyFiles */,
+				DB0862D91BF42D8A00A97135 /* dtmf_1.wav in CopyFiles */,
+				DB0862DA1BF42D8B00A97135 /* dtmf_2.wav in CopyFiles */,
+				DB0862DB1BF42D8B00A97135 /* dtmf_3.wav in CopyFiles */,
+				DB0862DC1BF42D8B00A97135 /* dtmf_4.wav in CopyFiles */,
+				DB0862DD1BF42D8B00A97135 /* dtmf_5.wav in CopyFiles */,
+				DB0862DE1BF42D8B00A97135 /* dtmf_6.wav in CopyFiles */,
+				DB0862DF1BF42D8B00A97135 /* dtmf_7.wav in CopyFiles */,
+				DB0862E01BF42D8B00A97135 /* dtmf_8.wav in CopyFiles */,
+				DB0862E11BF42D8B00A97135 /* dtmf_9.wav in CopyFiles */,
+				DB0862E21BF42D8B00A97135 /* dtmf_hash.wav in CopyFiles */,
+				DB0862E31BF42D8B00A97135 /* dtmf_star.wav in CopyFiles */,
+				DB0862E41BF42D8B00A97135 /* incoming.wav in CopyFiles */,
+				DB0862E51BF42D8B00A97135 /* outgoing.wav in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +204,7 @@
 				DB08620F1BF2D3AF00A97135 /* Sources */,
 				DB0862111BF2D3AF00A97135 /* CopyFiles */,
 				DB0862AC1BF421FF00A97135 /* Frameworks */,
+				DB0862D61BF42D7D00A97135 /* CopyFiles */,
 			);
 			buildRules = (
 			);

@@ -9,6 +9,6 @@
 #import <RCTBridge.h>
 #import "TwilioClient.h"
 
-@interface RCTTwilio : NSObject <RCTBridgeModule, TCDeviceDelegate>
+@interface RCTTwilio : NSObject <RCTBridgeModule, TCDeviceDelegate, TCConnectionDelegate>
 
 @end
