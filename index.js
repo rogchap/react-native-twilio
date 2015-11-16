@@ -34,8 +34,8 @@ let Twilio = {
   },
   addEventListener(type, handler) {
     _eventHandlers[type].set(handler, NativeAppEventEmitter.addListener(
-      type, err => {
-        handler(err);
+      type, rtn => {
+        handler(rtn);
       }
     ));
   },

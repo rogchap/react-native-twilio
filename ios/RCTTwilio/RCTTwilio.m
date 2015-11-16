@@ -57,7 +57,7 @@ RCT_EXPORT_METHOD(ignore) {
 -(void)device:(TCDevice *)device didReceiveIncomingConnection:(TCConnection *)connection {
     _pendingConnection = connection;
     [_pendingConnection setDelegate:self];
-    [self.bridge.eventDispatcher sendAppEventWithName:@"deviceDidReceiveIncoming" body:nil];
+    [self.bridge.eventDispatcher sendAppEventWithName:@"deviceDidReceiveIncoming" body:connection.parameters];
 }
 
 -(void)deviceDidStartListeningForIncomingConnections:(TCDevice*)device {
@@ -78,7 +78,7 @@ RCT_EXPORT_METHOD(ignore) {
 
 -(void)connectionDidStartConnecting:(TCConnection *)connection {
     [self.bridge.eventDispatcher
-     sendAppEventWithName:@"connectionDidStartConnecting" body:nil];
+     sendAppEventWithName:@"connectionDidStartConnecting" body:connection.parameters];
 }
 
 -(void)connectionDidConnect:(TCConnection *)connection {
