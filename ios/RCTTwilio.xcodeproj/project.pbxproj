@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862161BF2D3AF00A97135 /* RCTTwilio.h */; };
+		DB0862191BF2D3AF00A97135 /* RCTTwilio.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0862181BF2D3AF00A97135 /* RCTTwilio.m */; };
+		DB0862AD1BF4220600A97135 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862981BF4216D00A97135 /* libTwilioClient.a */; };
+		DB0862AE1BF4220A00A97135 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862971BF4216D00A97135 /* libssl.a */; };
+		DB0862AF1BF4220D00A97135 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0862961BF4216D00A97135 /* libcrypto.a */; };
+		DB0862D71BF42D8A00A97135 /* disconnect.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629B1BF4216D00A97135 /* disconnect.wav */; };
+		DB0862D81BF42D8A00A97135 /* dtmf_0.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629C1BF4216D00A97135 /* dtmf_0.wav */; };
+		DB0862D91BF42D8A00A97135 /* dtmf_1.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629D1BF4216D00A97135 /* dtmf_1.wav */; };
+		DB0862DA1BF42D8B00A97135 /* dtmf_2.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629E1BF4216D00A97135 /* dtmf_2.wav */; };
+		DB0862DB1BF42D8B00A97135 /* dtmf_3.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB08629F1BF4216D00A97135 /* dtmf_3.wav */; };
+		DB0862DC1BF42D8B00A97135 /* dtmf_4.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A01BF4216D00A97135 /* dtmf_4.wav */; };
+		DB0862DD1BF42D8B00A97135 /* dtmf_5.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A11BF4216D00A97135 /* dtmf_5.wav */; };
+		DB0862DE1BF42D8B00A97135 /* dtmf_6.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A21BF4216D00A97135 /* dtmf_6.wav */; };
+		DB0862DF1BF42D8B00A97135 /* dtmf_7.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A31BF4216D00A97135 /* dtmf_7.wav */; };
+		DB0862E01BF42D8B00A97135 /* dtmf_8.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A41BF4216D00A97135 /* dtmf_8.wav */; };
+		DB0862E11BF42D8B00A97135 /* dtmf_9.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A51BF4216D00A97135 /* dtmf_9.wav */; };
+		DB0862E21BF42D8B00A97135 /* dtmf_hash.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A61BF4216D00A97135 /* dtmf_hash.wav */; };
+		DB0862E31BF42D8B00A97135 /* dtmf_star.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A71BF4216D00A97135 /* dtmf_star.wav */; };
+		DB0862E41BF42D8B00A97135 /* incoming.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A81BF4216D00A97135 /* incoming.wav */; };
+		DB0862E51BF42D8B00A97135 /* outgoing.wav in CopyFiles */ = {isa = PBXBuildFile; fileRef = DB0862A91BF4216D00A97135 /* outgoing.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB0862111BF2D3AF00A97135 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DB0862171BF2D3AF00A97135 /* RCTTwilio.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0862D61BF42D7D00A97135 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				DB0862D71BF42D8A00A97135 /* disconnect.wav in CopyFiles */,
+				DB0862D81BF42D8A00A97135 /* dtmf_0.wav in CopyFiles */,
+				DB0862D91BF42D8A00A97135 /* dtmf_1.wav in CopyFiles */,
+				DB0862DA1BF42D8B00A97135 /* dtmf_2.wav in CopyFiles */,
+				DB0862DB1BF42D8B00A97135 /* dtmf_3.wav in CopyFiles */,
+				DB0862DC1BF42D8B00A97135 /* dtmf_4.wav in CopyFiles */,
+				DB0862DD1BF42D8B00A97135 /* dtmf_5.wav in CopyFiles */,
+				DB0862DE1BF42D8B00A97135 /* dtmf_6.wav in CopyFiles */,
+				DB0862DF1BF42D8B00A97135 /* dtmf_7.wav in CopyFiles */,
+				DB0862E01BF42D8B00A97135 /* dtmf_8.wav in CopyFiles */,
+				DB0862E11BF42D8B00A97135 /* dtmf_9.wav in CopyFiles */,
+				DB0862E21BF42D8B00A97135 /* dtmf_hash.wav in CopyFiles */,
+				DB0862E31BF42D8B00A97135 /* dtmf_star.wav in CopyFiles */,
+				DB0862E41BF42D8B00A97135 /* incoming.wav in CopyFiles */,
+				DB0862E51BF42D8B00A97135 /* outgoing.wav in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTTwilio.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0862161BF2D3AF00A97135 /* RCTTwilio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTTwilio.h; sourceTree = "<group>"; };
+		DB0862181BF2D3AF00A97135 /* RCTTwilio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTTwilio.m; sourceTree = "<group>"; };
+		DB08628F1BF4216D00A97135 /* TCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnection.h; sourceTree = "<group>"; };
+		DB0862901BF4216D00A97135 /* TCConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCConnectionDelegate.h; sourceTree = "<group>"; };
+		DB0862911BF4216D00A97135 /* TCDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDevice.h; sourceTree = "<group>"; };
+		DB0862921BF4216D00A97135 /* TCDeviceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCDeviceDelegate.h; sourceTree = "<group>"; };
+		DB0862931BF4216D00A97135 /* TCPresenceEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPresenceEvent.h; sourceTree = "<group>"; };
+		DB0862941BF4216D00A97135 /* TwilioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioClient.h; sourceTree = "<group>"; };
+		DB0862961BF4216D00A97135 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		DB0862971BF4216D00A97135 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		DB0862981BF4216D00A97135 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTwilioClient.a; sourceTree = "<group>"; };
+		DB0862991BF4216D00A97135 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
+		DB08629B1BF4216D00A97135 /* disconnect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = disconnect.wav; sourceTree = "<group>"; };
+		DB08629C1BF4216D00A97135 /* dtmf_0.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_0.wav; sourceTree = "<group>"; };
+		DB08629D1BF4216D00A97135 /* dtmf_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_1.wav; sourceTree = "<group>"; };
+		DB08629E1BF4216D00A97135 /* dtmf_2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_2.wav; sourceTree = "<group>"; };
+		DB08629F1BF4216D00A97135 /* dtmf_3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_3.wav; sourceTree = "<group>"; };
+		DB0862A01BF4216D00A97135 /* dtmf_4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_4.wav; sourceTree = "<group>"; };
+		DB0862A11BF4216D00A97135 /* dtmf_5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_5.wav; sourceTree = "<group>"; };
+		DB0862A21BF4216D00A97135 /* dtmf_6.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_6.wav; sourceTree = "<group>"; };
+		DB0862A31BF4216D00A97135 /* dtmf_7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_7.wav; sourceTree = "<group>"; };
+		DB0862A41BF4216D00A97135 /* dtmf_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_8.wav; sourceTree = "<group>"; };
+		DB0862A51BF4216D00A97135 /* dtmf_9.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_9.wav; sourceTree = "<group>"; };
+		DB0862A61BF4216D00A97135 /* dtmf_hash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_hash.wav; sourceTree = "<group>"; };
+		DB0862A71BF4216D00A97135 /* dtmf_star.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dtmf_star.wav; sourceTree = "<group>"; };
+		DB0862A81BF4216D00A97135 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		DB0862A91BF4216D00A97135 /* outgoing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = outgoing.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB0862AC1BF421FF00A97135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0862AD1BF4220600A97135 /* libTwilioClient.a in Frameworks */,
+				DB0862AE1BF4220A00A97135 /* libssl.a in Frameworks */,
+				DB0862AF1BF4220D00A97135 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB08620A1BF2D3AF00A97135 = {
+			isa = PBXGroup;
+			children = (
+				DB08628D1BF4216D00A97135 /* TwilioSDK */,
+				DB0862151BF2D3AF00A97135 /* RCTTwilio */,
+				DB0862141BF2D3AF00A97135 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0862141BF2D3AF00A97135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0862151BF2D3AF00A97135 /* RCTTwilio */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862161BF2D3AF00A97135 /* RCTTwilio.h */,
+				DB0862181BF2D3AF00A97135 /* RCTTwilio.m */,
+			);
+			path = RCTTwilio;
+			sourceTree = "<group>";
+		};
+		DB08628D1BF4216D00A97135 /* TwilioSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DB08628E1BF4216D00A97135 /* Headers */,
+				DB0862951BF4216D00A97135 /* Libraries */,
+				DB0862991BF4216D00A97135 /* readme.html */,
+				DB08629A1BF4216D00A97135 /* Resources */,
+			);
+			name = TwilioSDK;
+			path = libs/TwilioSDK;
+			sourceTree = "<group>";
+		};
+		DB08628E1BF4216D00A97135 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DB08628F1BF4216D00A97135 /* TCConnection.h */,
+				DB0862901BF4216D00A97135 /* TCConnectionDelegate.h */,
+				DB0862911BF4216D00A97135 /* TCDevice.h */,
+				DB0862921BF4216D00A97135 /* TCDeviceDelegate.h */,
+				DB0862931BF4216D00A97135 /* TCPresenceEvent.h */,
+				DB0862941BF4216D00A97135 /* TwilioClient.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		DB0862951BF4216D00A97135 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DB0862961BF4216D00A97135 /* libcrypto.a */,
+				DB0862971BF4216D00A97135 /* libssl.a */,
+				DB0862981BF4216D00A97135 /* libTwilioClient.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		DB08629A1BF4216D00A97135 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB08629B1BF4216D00A97135 /* disconnect.wav */,
+				DB08629C1BF4216D00A97135 /* dtmf_0.wav */,
+				DB08629D1BF4216D00A97135 /* dtmf_1.wav */,
+				DB08629E1BF4216D00A97135 /* dtmf_2.wav */,
+				DB08629F1BF4216D00A97135 /* dtmf_3.wav */,
+				DB0862A01BF4216D00A97135 /* dtmf_4.wav */,
+				DB0862A11BF4216D00A97135 /* dtmf_5.wav */,
+				DB0862A21BF4216D00A97135 /* dtmf_6.wav */,
+				DB0862A31BF4216D00A97135 /* dtmf_7.wav */,
+				DB0862A41BF4216D00A97135 /* dtmf_8.wav */,
+				DB0862A51BF4216D00A97135 /* dtmf_9.wav */,
+				DB0862A61BF4216D00A97135 /* dtmf_hash.wav */,
+				DB0862A71BF4216D00A97135 /* dtmf_star.wav */,
+				DB0862A81BF4216D00A97135 /* incoming.wav */,
+				DB0862A91BF4216D00A97135 /* outgoing.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0862121BF2D3AF00A97135 /* RCTTwilio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */;
+			buildPhases = (
+				DB08620F1BF2D3AF00A97135 /* Sources */,
+				DB0862111BF2D3AF00A97135 /* CopyFiles */,
+				DB0862AC1BF421FF00A97135 /* Frameworks */,
+				DB0862D61BF42D7D00A97135 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RCTTwilio;
+			productName = RCTTwilio;
+			productReference = DB0862131BF2D3AF00A97135 /* libRCTTwilio.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB08620B1BF2D3AF00A97135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rogchap Software";
+				TargetAttributes = {
+					DB0862121BF2D3AF00A97135 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = DB08620E1BF2D3AF00A97135 /* Build configuration list for PBXProject "RCTTwilio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB08620A1BF2D3AF00A97135;
+			productRefGroup = DB0862141BF2D3AF00A97135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0862121BF2D3AF00A97135 /* RCTTwilio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB08620F1BF2D3AF00A97135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0862191BF2D3AF00A97135 /* RCTTwilio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB08621A1BF2D3AF00A97135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB08621B1BF2D3AF00A97135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB0862AA1BF4216D00A97135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/TwilioSDK/**",
+					"$(PROJECT_DIR)/libs/TwilioSDK/Libraries",
+				);
+				PRODUCT_NAME = RCTTwilio;
+			};
+			name = Debug;
+		};
+		DB0862AB1BF4216D00A97135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs/TwilioSDK/**",
+					"$(PROJECT_DIR)/libs/TwilioSDK/Libraries",
+				);
+				PRODUCT_NAME = RCTTwilio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB08620E1BF2D3AF00A97135 /* Build configuration list for PBXProject "RCTTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB08621A1BF2D3AF00A97135 /* Debug */,
+				DB08621B1BF2D3AF00A97135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB08621C1BF2D3AF00A97135 /* Build configuration list for PBXNativeTarget "RCTTwilio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0862AA1BF4216D00A97135 /* Debug */,
+				DB0862AB1BF4216D00A97135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB08620B1BF2D3AF00A97135 /* Project object */;
+}
