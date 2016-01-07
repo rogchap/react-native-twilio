@@ -52,6 +52,12 @@ RCT_EXPORT_METHOD(ignore) {
     [_pendingConnection ignore];
 }
 
+RCT_EXPORT_METHOD(setMuted:(BOOL)isMuted) {
+    if (_connection && _connection.state == TCConnectionStateConnected) {
+        [_connection setMuted:isMuted];
+    }
+}
+
 #pragma mark - TCDeviceDelegate
 
 -(void)device:(TCDevice *)device didReceiveIncomingConnection:(TCConnection *)connection {
@@ -65,8 +71,12 @@ RCT_EXPORT_METHOD(ignore) {
 }
 
 -(void)device:(TCDevice *)device didStopListeningForIncomingConnections:(NSError *)error {
+    id body = nil;
+    if (error != nil) {
+        body = @{@"err": [error localizedDescription]};
+    }
     [self.bridge.eventDispatcher
-     sendAppEventWithName:@"deviceDidStopListening" body:@{@"err": [error localizedDescription]}];
+     sendAppEventWithName:@"deviceDidStopListening" body:body];
 }
 
 #pragma mark - TCConnectionDelegate
