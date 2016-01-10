@@ -24,6 +24,8 @@ const Twilio = require('react-native-twilio');
 
 componentWillMount() {
   Twilio.initWithTokenUrl('https://example.com/token');
+  // or 
+  Twilio.initWithToken('sometoken');
   Twilio.addEventListener('deviceDidStartListening', this._deviceDidStartListening);
   Twilio.addEventListener('deviceDidStopListening', this._deviceDidStopListening);
   Twilio.addEventListener('deviceDidReceiveIncoming', this._deviceDidReceiveIncoming);
