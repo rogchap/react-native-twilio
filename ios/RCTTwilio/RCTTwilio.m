@@ -30,6 +30,10 @@ RCT_EXPORT_METHOD(initWithTokenUrl:(NSString *) tokenUrl) {
     }
 }
 
+RCT_EXPORT_METHOD(initWithToken:(NSString *) token) {
+    _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
+}
+
 RCT_EXPORT_METHOD(connect:(NSDictionary *) params) {
     _connection = [_phone connect:params delegate:self];
 }
