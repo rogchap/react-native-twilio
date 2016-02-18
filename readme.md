@@ -1,5 +1,7 @@
 # A React Native wrapper for the [Twilio](https://www.twilio.com) mobile SDK
 
+[![npm version](https://badge.fury.io/js/react-native-twilio.svg)](https://badge.fury.io/js/react-native-twilio)
+
 ## Installation iOS
 
 1. Run `npm install react-native-twilio --save` in your project directory
@@ -22,6 +24,8 @@ const Twilio = require('react-native-twilio');
 
 componentWillMount() {
   Twilio.initWithTokenUrl('https://example.com/token');
+  // or 
+  Twilio.initWithToken('sometoken');
   Twilio.addEventListener('deviceDidStartListening', this._deviceDidStartListening);
   Twilio.addEventListener('deviceDidStopListening', this._deviceDidStopListening);
   Twilio.addEventListener('deviceDidReceiveIncoming', this._deviceDidReceiveIncoming);
