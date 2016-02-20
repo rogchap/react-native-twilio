@@ -17,6 +17,9 @@ let Twilio = {
   initWithTokenUrl(tokenUrl) {
     TwilioRCT.initWithTokenUrl(tokenUrl);
   },
+  initWithToken(token) {
+    TwilioRCT.initWithToken(token);
+  },
   connect(params = {}) {
     TwilioRCT.connect(params);
   },
