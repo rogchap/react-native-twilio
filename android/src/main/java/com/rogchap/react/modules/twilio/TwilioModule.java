@@ -2,6 +2,7 @@ package com.rogchap.react.modules.twilio;
 
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.ReactMethod;
 
@@ -15,16 +16,26 @@ import java.net.URLConnection;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.BufferedReader;
+import java.util.HashMap;
+import java.util.Map;
+
 
 public class TwilioModule extends ReactContextBaseJavaModule implements ConnectionListener {
 
-  public TwilioModule(ReactApplicationContext reactContext) {
-    super(reactContext);
-  }
-
+  private ReactContext _reactContext;
   private Device _phone;
   private Connection _connection;
   private Connection _pendingConnection;
+
+  public TwilioModule(ReactApplicationContext reactContext) {
+    super(reactContext);
+    _reactContext = reactContext;
+  }
+
+  private void sendEvent(String eventName, @Nullable WritableMap params) {
+    _reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
+      .emit(eventName, params);
+  }
 
   @Override
   public String getName() {
@@ -114,21 +125,29 @@ public class TwilioModule extends ReactContextBaseJavaModule implements Connecti
 
   @Override
   public void onConnecting(Connection connection) {
-
+    sendEvent("connectionDidStartConnecting", connection.getParameters());
   }
 
   @Override
   public void onConnected(Connection connection) {
-
+    sendEvent("connectionDidConnect", connection.getParameters());
   }
 
   @Override
   public void onDisconnected(Connection connection) {
-
+    if (connection == _connection) {
+      _connection = null;
+    }
+    if (connection == _pendingConnection) {
+        _pendingConnection = null;
+    }
+    sendEvent("connectionDidDisconnect", connection.getParameters());
   }
 
   @Override
   public void onDisconnected(Connection connection, int errorCode, String errorMessage) {
-    
+    Map errors = new HashMap();
+    errors.put("err", errorMessage);
+    sendEvent("connectionDidFail", errors);
   }
 }
