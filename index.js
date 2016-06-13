@@ -10,8 +10,9 @@ const _eventHandlers = {
   connectionDidFail: new Map(),
   connectionDidStartConnecting: new Map(),
   connectionDidConnect: new Map(),
-  connectionDidDisconnect: new Map()
-}
+  connectionDidDisconnect: new Map(),
+  deviceReady: new Map(),
+};
 
 const Twilio = {
   initWithTokenUrl (tokenUrl) {
