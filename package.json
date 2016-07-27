@@ -7,6 +7,9 @@
     "url": "git@github.com:rogchap/react-native-twilio.git"
   },
   "main": "index.js",
+  "scripts": {
+    "postinstall": "unzip ios/libs/TwilioSDK/Libraries/libTwilioClient.a.zip -d ios/libs/TwilioSDK/Libraries/"
+  },
   "keywords": [
     "react-component",
     "react-native",
