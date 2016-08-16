@@ -24,7 +24,7 @@ const Twilio = require('react-native-twilio');
 
 componentWillMount() {
   Twilio.initWithTokenUrl('https://example.com/token');
-  // or 
+  // or
   Twilio.initWithToken('sometoken');
   Twilio.addEventListener('deviceDidStartListening', this._deviceDidStartListening);
   Twilio.addEventListener('deviceDidStopListening', this._deviceDidStopListening);
@@ -38,7 +38,7 @@ componentWillMount() {
 ...
 
 Twilio.connect({To: '+61234567890'});
-  
+
 Twilio.disconnect();
 
 Twilio.accept();
@@ -46,4 +46,6 @@ Twilio.accept();
 Twilio.reject();
 
 Twilio.ignore();
+
+Twilio.sendDigits("1234");
 ```
