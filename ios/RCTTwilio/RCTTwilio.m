@@ -31,7 +31,12 @@ RCT_EXPORT_METHOD(initWithTokenUrl:(NSString *) tokenUrl) {
 }
 
 RCT_EXPORT_METHOD(initWithToken:(NSString *) token) {
-    _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
+    if (_phone == nil) {
+      _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
+    } else {
+      [_phone updateCapabilityToken:token];
+      [self.bridge.eventDispatcher sendAppEventWithName:@"deviceDidStartListening" body:nil];
+    }
 }
 
 RCT_EXPORT_METHOD(connect:(NSDictionary *) params) {
