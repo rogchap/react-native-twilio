@@ -6,9 +6,9 @@
 //  Copyright © 2015 Rogchap Software. All rights reserved.
 //
 
-#import <RCTBridge.h>
+#import "RCTBridgeModule.h"
 #import "TwilioClient.h"
+#import "RCTEventEmitter.h"
 
-@interface RCTTwilio : NSObject <RCTBridgeModule, TCDeviceDelegate, TCConnectionDelegate>
-
+@interface RCTTwilio : RCTEventEmitter <RCTBridgeModule, TCDeviceDelegate, TCConnectionDelegate>
 @end

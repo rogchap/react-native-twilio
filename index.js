@@ -1,60 +1,61 @@
-let React = require('react-native');
-let { NativeModules, NativeAppEventEmitter } = React;
+import { NativeModules, NativeEventEmitter } from 'react-native'
+const TwilioRCT = NativeModules.Twilio
 
-let TwilioRCT = NativeModules.Twilio;
+const NativeAppEventEmitter = new NativeEventEmitter(NativeModules.Twilio)
 
-let _eventHandlers = {
+const _eventHandlers = {
   deviceDidStartListening: new Map(),
   deviceDidStopListening: new Map(),
   deviceDidReceiveIncoming: new Map(),
   connectionDidFail: new Map(),
   connectionDidStartConnecting: new Map(),
   connectionDidConnect: new Map(),
-  connectionDidDisconnect: new Map(),
-};
+  connectionDidDisconnect: new Map()
+}
 
-let Twilio = {
-  initWithTokenUrl(tokenUrl) {
-    TwilioRCT.initWithTokenUrl(tokenUrl);
+const Twilio = {
+  initWithTokenUrl (tokenUrl) {
+    TwilioRCT.initWithTokenUrl(tokenUrl)
   },
-  initWithToken(token) {
-    TwilioRCT.initWithToken(token);
+  initWithToken (token) {
+    TwilioRCT.initWithToken(token)
   },
-  connect(params = {}) {
-    TwilioRCT.connect(params);
+  connect (params = {}) {
+    console.log('params:', params)
+    TwilioRCT.connect(params)
   },
-  disconnect() {
-    TwilioRCT.disconnect();
+  disconnect () {
+    TwilioRCT.disconnect()
   },
-  accept() {
-    TwilioRCT.accept();
+  accept () {
+    TwilioRCT.accept()
   },
-  reject() {
-    TwilioRCT.reject();
+  reject () {
+    TwilioRCT.reject()
   },
-  ignore() {
-    TwilioRCT.ignore();
+  ignore () {
+    TwilioRCT.ignore()
   },
-  setMuted(isMuted) {
-    TwilioRCT.setMuted(isMuted);
+  setMuted (isMuted) {
+    TwilioRCT.setMuted(isMuted)
   },
-  sendDigits(digits) {
-    TwilioRCT.sendDigits(digits);
+  sendDigits (digits) {
+    TwilioRCT.sendDigits(digits)
   },
-  addEventListener(type, handler) {
+  addEventListener (type, handler) {
     _eventHandlers[type].set(handler, NativeAppEventEmitter.addListener(
-      type, rtn => {
-        handler(rtn);
+      type, (rtn) => {
+        handler(rtn)
       }
-    ));
+    ))
   },
-  removeEventListener(type, handler) {
+  removeEventListener (type, handler) {
     if (!_eventHandlers[type].has(handler)) {
-      return;
+      return
     }
-    _eventHandlers[type].get(handler).remove();
-    _eventHandlers[type].delete(handler);
-  },
-};
+    _eventHandlers[type].get(handler).remove()
+    _eventHandlers[type].delete(handler)
+  }
+}
 
-module.exports = Twilio;
+export default Twilio
