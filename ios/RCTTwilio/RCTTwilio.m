@@ -16,6 +16,7 @@ NSString *const connectionDidFail = @"connectionDidFail";
 NSString *const connectionDidStartConnecting = @"connectionDidStartConnecting";
 NSString *const connectionDidConnect = @"connectionDidConnect";
 NSString *const connectionDidDisconnect = @"connectionDidDisconnect";
+NSString *const deviceReady = @"deviceReady";
 
 @implementation RCTTwilio
 {
@@ -29,7 +30,7 @@ RCT_EXPORT_MODULE();
 @synthesize bridge = _bridge;
 
 - (NSArray<NSString *> *)supportedEvents {
-  return @[deviceDidReceiveIncoming, deviceDidStartListening, deviceDidStopListening, connectionDidFail, connectionDidStartConnecting, connectionDidConnect, connectionDidDisconnect];
+  return @[deviceDidReceiveIncoming, deviceDidStartListening, deviceDidStopListening, connectionDidFail, connectionDidStartConnecting, connectionDidConnect, connectionDidDisconnect, deviceReady];
 }
 
 RCT_EXPORT_METHOD(initWithTokenUrl:(NSString *) tokenUrl) {
@@ -40,11 +41,13 @@ RCT_EXPORT_METHOD(initWithTokenUrl:(NSString *) tokenUrl) {
     NSLog(@"Error retrieving token: %@", [error localizedDescription]);
   } else {
     _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
+    [self sendEventWithName:deviceReady body:nil];
   }
 }
 
 RCT_EXPORT_METHOD(initWithToken:(NSString *) token) {
   _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
+  [self sendEventWithName:deviceReady body:nil];
 }
 
 RCT_EXPORT_METHOD(connect:(NSDictionary *) params) {

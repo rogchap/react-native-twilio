@@ -4,7 +4,7 @@
   "description": "A React Native wrapper for the Twilio mobile SDK",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rogchap/react-native-twilio.git"
+    "url": "git@github.com:fabriziomoscon/react-native-twilio.git"
   },
   "main": "index.js",
   "scripts": {
