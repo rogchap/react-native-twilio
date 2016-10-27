@@ -1,10 +1,10 @@
 {
   "name": "react-native-twilio",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A React Native wrapper for the Twilio mobile SDK",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rogchap/react-native-twilio.git"
+    "url": "git@github.com:fabriziomoscon/react-native-twilio.git"
   },
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "voice",
     "phone",
     "voip",
-    "ios"
+    "ios",
+    "android"
   ],
   "author": "Roger Chapman",
   "license": "MIT"
