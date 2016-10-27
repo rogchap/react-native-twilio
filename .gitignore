@@ -1,4 +1,21 @@
+# OSX
+#
+ios/.DS_Store
+
 .idea
 xcuserdata
 Pods
 *.lock
+build/
+
+# Android/IJ
+#
+*.iml
+.gradle
+.idea
+local.properties
+
+# node.js
+#
+node_modules/
+npm-debug.log

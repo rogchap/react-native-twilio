@@ -1,11 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.rogchap.react.modules.twilio">
 
-          <uses-permission android:name="android.permission.BLUETOOTH"/>
-          <uses-permission android:name="android.permission.INTERNET"/>
-          <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-          <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+          <!-- needed for monitoring network availability -->
           <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
           <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
+          <!-- needed for processing on the network -->
+          <uses-permission android:name="android.permission.INTERNET"/>
+
+          <!-- needed to enable/disable the speakerphone -->
+          <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+          <!-- needed to receive audio from microphone during a call -->
+          <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 </manifest>
