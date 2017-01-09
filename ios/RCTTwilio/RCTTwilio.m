@@ -7,7 +7,7 @@
 //
 
 #import "RCTTwilio.h"
-#import "RCTEventEmitter.h"
+#import <React/RCTEventEmitter.h>
 
 NSString *const deviceDidReceiveIncoming = @"deviceDidReceiveIncoming";
 NSString *const deviceDidStartListening = @"deviceDidStartListening";

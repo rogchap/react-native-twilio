@@ -6,9 +6,9 @@
 //  Copyright © 2015 Rogchap Software. All rights reserved.
 //
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 #import "TwilioClient.h"
-#import "RCTEventEmitter.h"
+#import <React/RCTEventEmitter.h>
 
 @interface RCTTwilio : RCTEventEmitter <RCTBridgeModule, TCDeviceDelegate, TCConnectionDelegate>
 @end
