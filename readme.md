@@ -11,6 +11,11 @@ Run `npm install react-native-twilio --save` in your project directory
 1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"`
 2. Within `node_modules`, find `react-native-twilio/ios` and add RCTTwilio.xcodeproj to your project.
 3. Add `libRCTTwilio.a` to `Build Phases -> Link Binary With Libraries`
+4. Add the lib to `info.plist`
+```
+<key>NSMicrophoneUsageDescription</key>
+<string>Need microphone to voice when making a call</string>
+```
 
 ## Installation Android
 
