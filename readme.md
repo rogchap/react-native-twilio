@@ -5,7 +5,11 @@
 This library implement the superseeded Twilio Client SDK. Twilio has moved to the new Programmable Voice SDK.
 
 Run `npm install react-native-twilio --save` in your project directory
-
+Add the lib to `info.plist`
+```
+<key>NSMicrophoneUsageDescription</key>
+<string>Need microphone to voice when making a call</string>
+```
 ## Installation iOS
 
 1. Open your project in XCode, right click on `Libraries` and click `Add Files to "Your Project Name"`
